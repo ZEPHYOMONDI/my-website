@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WELCOME TO ZEPHIE'S WEBSITE</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        /* Navigation */
+        nav {
+            background-color: #862867;
+            padding: 15px 0;
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin: 0 15px;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: #3498db;
+        }
+        
+        /* Main Content */
+        main {
+            padding: 40px 0;
+        }
+        
+        section {
+            margin-bottom: 40px;
+            background: white;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        section h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #3498db;
+        }
+        
+        /* About Section */
+        .about-content {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .about-text {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .profile-img {
+            flex: 1;
+            min-width: 300px;
+            text-align: center;
+        }
+        
+        .profile-img img {
+            max-width: 100%;
+            border-radius: 50%;
+            border: 5px solid #3498db;
+            max-height: 400px;
+        }
+        
+        /* What I Do Section */
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        
+        .service {
+            flex: 0 0 calc(33.333% - 20px);
+            margin-bottom: 20px;
+            background: #f1f1f1;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        
+        .service h3 {
+            color: #69b616;
+            margin-bottom: 10px;
+        }
+        
+        /* Biography Section */
+        .bio-content {
+            columns: 2;
+            column-gap: 30px;
+        }
+        
+        /* Social Media Links */
+        .social-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        
+        .social-link {
+            margin: 10px 15px;
+            text-align: center;
+        }
+        
+        .social-link a {
+            display: inline-block;
+            width: 60px;
+            height: 60px;
+            line-height: 60px;
+            background: #3498db;
+            color: white;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            transition: transform 0.3s,background 0.3s;
+            text-decoration: pink;
+        }
+
+        .bubble {
+            position: absolute;
+            border-radius: 70%;
+            background: rgba(207, 234, 140, 0.3);
+            box-shadow: inset 0 0 10px rgba(209, 15, 206, 0.5);
+            animation: float linear infinite;
+        }
+        
+        @keyframes float {
+            0% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-1000px) rotate(720deg);
+                opacity: 0;
+            }
+        }
+        
+        .social-link a:hover {
+            transform: translateY(-5px);
+        }
+        
+        .facebook:hover { background: #3b5998; }
+        .twitter:hover { background: #000000; }
+        .linkedin:hover { background: #0077b5; }
+        .whatsapp:hover { background: #25d366; }
+        .instagram:hover { background: #e53cdf; }
+        .github:hover { background: #000000; }
+        
+        .social-link p {
+            margin-top: 5px;
+            font-size: 0.9rem;
+        }
+        
+        /* Footer */
+        footer {
+            background: #2c3e50;
+            color: rgb(206, 21, 163);
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .bio-content {
+                columns: 1;
+            }
+            
+            .service {
+                flex: 0 0 100%;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav ul li {
+                margin: 5px 0;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>ZEPHY OMONDI MBOYA</h1>
+            <p>Web Developer Data analysist, Data Scientist & Digital Creator</p>
+        </div>
+    </header>
+    
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#what-i-do">Services I Offer</a></li>
+                <li><a href="#biography">Biography</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <main class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Hello! I'm ZEPHY OMONDI, a passionate web developer and data scientist with over 3 years of experience creating beautiful, functional websites and applications. I specialize in front-end development data science and digital mentorship, but also have substantial back-end experience.</p>
+                    <p>"When I'm not coding, you can find me sleeping or reading memes about cyber security, or watching some short videos". I believe in continuous learning and pushing the boundaries of what's possible with technology.</p>
+                </div>
+                <div class="profile-img">
+                    <img src="image/1678182291970.jpg" alt="zephyomondi profile">
+                </div>
+            </div>
+        </section>
+        <section id="what-i-do">
+            <h2>Services I Offer</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>Web Development</h3>
+                    <p>I create responsive, user-friendly websites using modern technologies like HTML5, CSS3, JavaScript, and various frameworks.</p>
+                </div>
+                <div class="service">
+                    <h3>Data science</h3>
+                    <p>am good in role such as, statistics, programming, domain knowledge, and machine learning to extract insights from data and solve complex business problems.</p>
+                </div>
+                <div class="service">
+                    <h3>Data Analysis</h3>
+                    <p>I collects, cleans, and analyzes data to uncover trends, patterns, and insights that drive business decisions. I am able to handle data through SQL, Python, Excel, and visualization platforms (Tableau, Power BI) to process data, generate reports, and create dashboards for stakeholders.</p>
+                </div>
+                <div class="service">
+                    <h3>Graphic Designing and Animation</h3>
+                    <p>I have experience to creates a 3D visual content (logos, posters, social media graphics, packaging.) to communicate messages effectively.</p>
+                </div>
+                <div class="service">
+                    <h3>Consulting</h3>
+                    <p>Providing expert advice on digital strategy, technology stack selection, and implementation approaches.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="biography">
+            <h2>Biography</h2>
+            <div class="bio-content">
+                <p>Born and raised in RUSINGA ISLAND-MBITA, I developed an early interest in computers and technology, and that spark grew into a lifelong passion.</p>
+                
+                <p>I graduated from ZETECH UNIVERSITY with a degree in Science Information and Technology in 2024. During my time there, I interned at ZETECH UNIVERSITY, gaining valuable real-world experience.</p>
+                
+                <p>After graduation, I joined KAMUKUNJI INNOVATION HUB(AYEC) as as digital literacy trainer, mentor and technician assisting in maintaining their computers, where I helped build and maintain their flagship product. This experience boost my capability in the data analysis, machine learning and data science through handling SQL MYSQL, oracle and other database service providers.</p>
+                
+                <p>In 2023,a I was a student I decided to go freelance to have more control over the projects I work on and to pursue my passion for teaching through online courses and workshops.</p>
+                
+                <p>Today, I am working on personal projects that allow me to explore new technologies. I'm particularly interested in the intersection of technology and education, and how we can use web technologies to make learning more accessible.</p>
+                
+                <p>When I'm not working, I enjoy contributing to open source projects, mentoring junior developers, and speaking at tech conferences around the world.</p>
+            </div>
+        </section>
+        
+        <section id="contact">
+            <h2>Connect With Me</h2>
+            <div class="social-links">
+                <div class="social-link">
+                    <a href="https://www.facebook.com/yourprofile" class="facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <p>facebook</p>
+                </div>
+                <div class="social-link">
+                    <a href="https://www.linkedin.com/in/omondi-zephy-1b4994253/" class="linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <p>linkedIn</p>
+                </div>
+                <div class="social-link">
+                    <a href="https://wa.me/+254790834554" class="whatsapp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <p>whatsApp</p>
+                </div>
+                <div class="social-link">
+                    <a href="https://x.com/OZephie" class="twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <p>twitter</p>
+                </div>
+                <div class="social-link">
+                    <a href="https://www.instagram.com/zephyomondi/" class="instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <p>instagram</p>
+                </div>
+                <div class="social-link">
+                    <a href="https://github.com/ZEPHYOMONDI"><i class="fab fa-github"></i></a>
+                    <p>github</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const body = document.body;
+            const bubblesCount = 100;
+            
+            for (let i = 0; i < bubblesCount; i++) {
+                createBubble();
+            }
+            
+            function createBubble() {
+                const bubble = document.createElement('div');
+                bubble.className = 'bubble';
+                
+                // Random size between 10px and 60px
+                const size = Math.random() * 50 + 10;
+                bubble.style.width = `${size}px`;
+                bubble.style.height = `${size}px`;
+                
+                // Random position
+                bubble.style.left = `${Math.random() * 100}vw`;
+                bubble.style.bottom = `-${size}px`;
+                
+                // Random animation duration between 10s and 20s
+                const duration = Math.random() * 10 + 10;
+                bubble.style.animationDuration = `${duration}s`;
+                
+                // Random delay
+                bubble.style.animationDelay = `${Math.random() * 5}s`;
+                
+                body.appendChild(bubble);
+                
+                // Remove bubble after animation completes
+                setTimeout(() => {
+                    bubble.remove();
+                    createBubble(); // Create a new bubble to replace this one
+                }, duration * 1000);
+            }
+        });
+    </script>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; omondizephy@gmail.com</p>
+        </div>
+    </footer>
+</body>
+</html>
